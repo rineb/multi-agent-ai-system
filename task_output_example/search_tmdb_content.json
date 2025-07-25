@@ -1,0 +1,554 @@
+{
+  "movies": [
+    {
+      "tmdb_id": 19995,
+      "title": "Avatar",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/19995",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
+      ],
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "vote_average": 7.594,
+      "runtime_minutes": 162
+    },
+    {
+      "tmdb_id": 1241470,
+      "title": "Osiris",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1241470",
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Horror"
+      ],
+      "overview": "Special Forces commandos on a mission are abducted mid-operation by a mysterious spacecraft. Upon waking aboard, they find themselves prey to a relentless alien race in a fight for survival.",
+      "vote_average": 6.577,
+      "runtime_minutes": 108
+    },
+    {
+      "tmdb_id": 857,
+      "title": "Saving Private Ryan",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/857",
+      "genres": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "overview": "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
+      "vote_average": 8.22,
+      "runtime_minutes": 169
+    },
+    {
+      "tmdb_id": 508965,
+      "title": "Klaus",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/508965",
+      "genres": [
+        "Animation",
+        "Family",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "overview": "A selfish postman and a reclusive toymaker form an unlikely friendship, delivering joy to a cold, dark town that desperately needs it.",
+      "vote_average": 8.235,
+      "runtime_minutes": 96
+    },
+    {
+      "tmdb_id": 501902,
+      "title": "Just Friends",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/501902",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "overview": "Joris is trying to come to terms with his broken family relationships on the 10th anniversary of his father’s death when he meets the free-spirited, Yad.",
+      "vote_average": 7.1,
+      "runtime_minutes": 84
+    },
+    {
+      "tmdb_id": 490132,
+      "title": "Green Book",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/490132",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "History"
+      ],
+      "overview": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans relied on a guide called The Negro Motorist Green Book.",
+      "vote_average": 8.227,
+      "runtime_minutes": 130
+    },
+    {
+      "tmdb_id": 299534,
+      "title": "Avengers: Endgame",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/299534",
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos.",
+      "vote_average": 8.238,
+      "runtime_minutes": 181
+    },
+    {
+      "tmdb_id": 575265,
+      "title": "Mission: Impossible - The Final Reckoning",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/575265",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity.",
+      "vote_average": 7.278,
+      "runtime_minutes": 170
+    },
+    {
+      "tmdb_id": 911430,
+      "title": "F1",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/911430",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team.",
+      "vote_average": 7.828,
+      "runtime_minutes": 156
+    },
+    {
+      "tmdb_id": 110420,
+      "title": "Wolf Children",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/110420",
+      "genres": [
+        "Animation",
+        "Family",
+        "Drama",
+        "Fantasy"
+      ],
+      "overview": "After her werewolf lover unexpectedly dies, a woman must find a way to raise their son and daughter.",
+      "vote_average": 8.221,
+      "runtime_minutes": 117
+    },
+    {
+      "tmdb_id": 1451288,
+      "title": "The Stepmother's Bond",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1451288",
+      "genres": [
+        "Drama"
+      ],
+      "overview": "Paula faces the everyday challenge of proving that she deserves the title of mother.",
+      "vote_average": 6.25,
+      "runtime_minutes": 97
+    },
+    {
+      "tmdb_id": 11324,
+      "title": "Shutter Island",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/11324",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "overview": "World War II soldier-turned-U.S. Marshal Teddy Daniels investigates the disappearance of a patient.",
+      "vote_average": 8.201,
+      "runtime_minutes": 138
+    },
+    {
+      "tmdb_id": 98,
+      "title": "Gladiator",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/98",
+      "genres": [
+        "Action",
+        "Drama",
+        "Adventure"
+      ],
+      "overview": "After the death of Emperor Marcus Aurelius, Maximus is forced to become a gladiator.",
+      "vote_average": 8.22,
+      "runtime_minutes": 155
+    },
+    {
+      "tmdb_id": 1087192,
+      "title": "How to Train Your Dragon",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1087192",
+      "genres": [
+        "Fantasy",
+        "Family",
+        "Action",
+        "Adventure"
+      ],
+      "overview": "Hiccup stands apart when he befriends a feared Night Fury dragon.",
+      "vote_average": 8.028,
+      "runtime_minutes": 125
+    },
+    {
+      "tmdb_id": 1078605,
+      "title": "Weapons",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1078605",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "overview": "A community is left questioning who or what is behind the disappearance of children.",
+      "vote_average": 7.399,
+      "runtime_minutes": 129
+    },
+    {
+      "tmdb_id": 1389158,
+      "title": "Maa",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1389158",
+      "genres": [
+        "Horror"
+      ],
+      "overview": "A mother and daughter encounter a demon in a village where girls have been disappearing.",
+      "vote_average": 6.679,
+      "runtime_minutes": 133
+    },
+    {
+      "tmdb_id": 1106289,
+      "title": "The Pickup",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1106289",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "overview": "A routine cash pickup takes a wild turn when mismatched armored truck drivers are ambushed.",
+      "vote_average": 6.52,
+      "runtime_minutes": 94
+    },
+    {
+      "tmdb_id": 1035259,
+      "title": "The Naked Gun",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/1035259",
+      "genres": [
+        "Comedy",
+        "Action",
+        "Crime"
+      ],
+      "overview": "Only one man has the particular set of skills to lead Police Squad and save the world.",
+      "vote_average": 6.7,
+      "runtime_minutes": 85
+    },
+    {
+      "tmdb_id": 278,
+      "title": "The Shawshank Redemption",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/278",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "overview": "Imprisoned for a double murder, Andy Dufresne begins a new life at Shawshank prison.",
+      "vote_average": 8.713,
+      "runtime_minutes": 142
+    },
+    {
+      "tmdb_id": 11,
+      "title": "Star Wars",
+      "content_type": "movie",
+      "url": "https://www.themoviedb.org/movie/11",
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "overview": "Princess Leia is captured and held hostage by the evil Imperial forces.",
+      "vote_average": 8.205,
+      "runtime_minutes": 121
+    }
+  ],
+  "tv_shows": [
+    {
+      "tmdb_id": 1416,
+      "title": "Grey's Anatomy",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/1416",
+      "genres": [
+        "Drama"
+      ],
+      "overview": "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+      "vote_average": 8.2,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 246246,
+      "title": "Beauty in Black",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/246246",
+      "genres": [
+        "Drama"
+      ],
+      "overview": "A stripper's fate takes a turn when she crosses paths with a wealthy, dysfunctional family behind a cosmetics dynasty.",
+      "vote_average": 7.505,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 84773,
+      "title": "The Lord of the Rings: The Rings of Power",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/84773",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil.",
+      "vote_average": 7.276,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 245648,
+      "title": "Billionaires' Bunker",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/245648",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Mystery",
+        "Crime"
+      ],
+      "overview": "When a group of billionaires takes shelter in a luxury bunker, an old feud between two families resurfaces.",
+      "vote_average": 6.414,
+      "episode_runtime_minutes": 55
+    },
+    {
+      "tmdb_id": 2098,
+      "title": "Batman: The Animated Series",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/2098",
+      "genres": [
+        "Action & Adventure",
+        "Animation",
+        "Drama",
+        "Mystery"
+      ],
+      "overview": "Vowing to avenge the murder of his parents, Bruce Wayne devotes his life to wiping out crime in Gotham City.",
+      "vote_average": 8.555,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 790,
+      "title": "Agatha Christie's Poirot",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/790",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "overview": "Accompanied by his elegant and trustworthy sidekicks, the intelligent Belgian detective Hercule Poirot investigates deceptions.",
+      "vote_average": 8.167,
+      "episode_runtime_minutes": 50
+    },
+    {
+      "tmdb_id": 194766,
+      "title": "The Summer I Turned Pretty",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/194766",
+      "genres": [
+        "Drama"
+      ],
+      "overview": "Every summer is the same ... until Belly turns sixteen and relationships will be tested.",
+      "vote_average": 8.148,
+      "episode_runtime_minutes": 736
+    },
+    {
+      "tmdb_id": 247043,
+      "title": "The Ba***ds of Bollywood",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/247043",
+      "genres": [
+        "Comedy",
+        "Action & Adventure"
+      ],
+      "overview": "An ambitious outsider navigates the chaotic world of Bollywood.",
+      "vote_average": 7.2,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 71694,
+      "title": "Snowfall",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/71694",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "overview": "Set against the infancy of the crack cocaine epidemic, the story follows characters on a violent collision course.",
+      "vote_average": 8.346,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 57243,
+      "title": "Doctor Who",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/57243",
+      "genres": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "overview": "The Doctor is a Time Lord saving planets for a living.",
+      "vote_average": 7.6,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 83121,
+      "title": "Kaguya-sama: Love Is War",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/83121",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "overview": "Miyuki Shirogane and Kaguya Shinomiya are regarded as the perfect couple despite not being in a romantic relationship.",
+      "vote_average": 8.559,
+      "episode_runtime_minutes": 24
+    },
+    {
+      "tmdb_id": 281058,
+      "title": "Secrets of the Silent Witch",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/281058",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "overview": "Monica Everett, the Silent Witch, goes undercover at a prestigious school for nobles.",
+      "vote_average": 9.0,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 1398,
+      "title": "The Sopranos",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/1398",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "overview": "The story of mobster Tony Soprano and his struggles balancing home life and the criminal organization he heads.",
+      "vote_average": 8.648,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 205715,
+      "title": "Gen V",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/205715",
+      "genres": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "overview": "At America's only college for superheroes, students compete for the university's top ranking.",
+      "vote_average": 7.716,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 119051,
+      "title": "Wednesday",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/119051",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Mystery",
+        "Comedy"
+      ],
+      "overview": "Wednesday Addams investigates twisted mysteries while making friends and foes at Nevermore Academy.",
+      "vote_average": 8.388,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 1421,
+      "title": "Modern Family",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/1421",
+      "genres": [
+        "Comedy"
+      ],
+      "overview": "A hilariously honest look at the warm and twisted embrace of the modern family.",
+      "vote_average": 7.884,
+      "episode_runtime_minutes": 25
+    },
+    {
+      "tmdb_id": 207332,
+      "title": "SAKAMOTO DAYS",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/207332",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Action & Adventure"
+      ],
+      "overview": "Taro Sakamoto, a retired hitman, must fight to protect his beloved family.",
+      "vote_average": 8.123,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 4607,
+      "title": "Lost",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/4607",
+      "genres": [
+        "Mystery",
+        "Action & Adventure",
+        "Drama"
+      ],
+      "overview": "Stripped of everything, the survivors of a plane crash must work together to survive.",
+      "vote_average": 7.9,
+      "episode_runtime_minutes": 45
+    },
+    {
+      "tmdb_id": 890,
+      "title": "Neon Genesis Evangelion",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/890",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Animation",
+        "Drama"
+      ],
+      "overview": "Devastated, mankind's last remnants moved underground to wait for their fate against the Angels.",
+      "vote_average": 8.6,
+      "episode_runtime_minutes": 25
+    },
+    {
+      "tmdb_id": 294443,
+      "title": "Time Raiders",
+      "content_type": "tv",
+      "url": "https://www.themoviedb.org/tv/294443",
+      "genres": [
+        "Action & Adventure",
+        "Mystery"
+      ],
+      "overview": "Antique dealer Wu Xie stumbles upon a cryptic silk text leading to hidden treasures.",
+      "vote_average": 9.0,
+      "episode_runtime_minutes": 45
+    }
+  ]
+}

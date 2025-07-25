@@ -1,0 +1,99 @@
+{
+  "user_preference_summary": {
+    "key_insights": [
+      "User has a strong preference for Drama across podcasts.",
+      "Prefers content from reputable publishers such as Pushkin Industries and TED.",
+      "High rating tendencies with a tendency to choose true crime and educational content.",
+      "User enjoys a mix of serious topics and engaging narratives with a preference for explicit content."
+    ]
+  },
+  "genre_preferences": {
+    "ranked": {
+      "technology": 0.6,
+      "history": 0.2,
+      "true_crime": 0.2,
+      "education": 0.2,
+      "health": 0.2,
+      "sports": 0.2
+    }
+  },
+  "content_duration_preferences": {
+    "average_duration_minutes": 54,
+    "short_content": "User prefers episodes around 30-60 minutes.",
+    "long_content": "User also consumes longer episodes when the content is engaging."
+  },
+  "explicit_content_tolerance": 0.6,
+  "listening_patterns": {
+    "listening_frequency": "casual_listener",
+    "total_analyzed_shows": 5
+  },
+  "episode_candidates": [
+    {
+      "id": "64W7uM8mnO9gKN6vXBsOJO",
+      "title": "SYSK’s Fall True Crime Playlist: Who Committed the 1912 Villisca Ax Murders?",
+      "description": "In a small town in Iowa in 1912 eight people were murdered in the grisliest of ways while they slept.",
+      "duration_minutes": 46,
+      "release_date": "2025-09-26",
+      "url": "https://open.spotify.com/episode/64W7uM8mnO9gKN6vXBsOJO",
+      "show_name": "Stuff You Should Know",
+      "publisher": "iHeartPodcasts",
+      "genres": ["true_crime"]
+    },
+    {
+      "id": "5ESaeSaf4Rz56snsmlcBFs",
+      "title": "(#1) Elise’s Top Ten: The psychology of your future self | Dan Gilbert",
+      "description": "Human beings are works in progress that mistakenly think they're finished.",
+      "duration_minutes": 12,
+      "release_date": "2025-09-20",
+      "url": "https://open.spotify.com/episode/5ESaeSaf4Rz56snsmlcBFs",
+      "show_name": "TED Talks Daily",
+      "publisher": "TED",
+      "genres": ["education", "history"]
+    },
+    {
+      "id": "7Aon3Yu9KmFvr6PeZN0KqX",
+      "title": "Friendships: Handling Change, Conflict and Finding New Friends",
+      "description": "Dr Laurie examines friendship and how to make new friends in adulthood.",
+      "duration_minutes": 37,
+      "release_date": "2025-04-04",
+      "url": "https://open.spotify.com/episode/7Aon3Yu9KmFvr6PeZN0KqX",
+      "show_name": "The Happiness Lab with Dr. Laurie Santos",
+      "publisher": "Pushkin Industries",
+      "genres": ["interview"]
+    },
+    {
+      "id": "70NVLg0XxE5tfWGCVeeKyD",
+      "title": "How to Spend Your Time and Money Better (with Nobel Prize Winner Richard Thaler)",
+      "description": "We all behave irrationally. Discover why and how we can guard against it.",
+      "duration_minutes": 48,
+      "release_date": "2025-09-22",
+      "url": "https://open.spotify.com/episode/70NVLg0XxE5tfWGCVeeKyD",
+      "show_name": "The Happiness Lab with Dr. Laurie Santos",
+      "publisher": "Pushkin Industries",
+      "genres": []
+    },
+    {
+      "id": "2IFkDV7RKm9GBrKWdxuULG",
+      "title": "Will climate change make your home uninsurable? | Amy Barnes",
+      "description": "Climate change is making home insurance unaffordable for many.",
+      "duration_minutes": 15,
+      "release_date": "2025-09-15",
+      "url": "https://open.spotify.com/episode/2IFkDV7RKm9GBrKWdxuULG",
+      "show_name": "TED Talks Daily",
+      "publisher": "TED",
+      "genres": ["news", "business", "education"]
+    },
+    {
+      "id": "353TduVnOfNqHR6Cu8p4hU",
+      "title": "How Dolphins Work!",
+      "description": "Dive into this amazing installment on dolphins!",
+      "duration_minutes": 53,
+      "release_date": "2025-09-02",
+      "url": "https://open.spotify.com/episode/353TduVnOfNqHR6Cu8p4hU",
+      "show_name": "Stuff You Should Know",
+      "publisher": "iHeartPodcasts",
+      "genres": []
+    }
+  ],
+  "confidence_score": 0.9
+}

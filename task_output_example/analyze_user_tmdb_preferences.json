@@ -1,0 +1,49 @@
+{
+  "user_preference_summary": {
+    "key_insights": [
+      "User has a strong preference for Drama across movies and TV shows.",
+      "High rating tendencies with an average rating given around 9.8.",
+      "User prefers dramas with comedic elements.",
+      "Content with mainstream appeal is moderately favored."
+    ]
+  },
+  "genre_preferences": {
+    "ranked": {
+      "Drama": 1.0,
+      "Comedy": 0.67,
+      "Adventure": 0.5,
+      "Crime": 0.67,
+      "Mystery": 0.33,
+      "Fantasy": 0.5,
+      "Science Fiction": 0.25,
+      "Animation": 0.25,
+      "Family": 0.25,
+      "History": 0.25
+    }
+  },
+  "rating_patterns": {
+    "minimum_quality_threshold": 9.0,
+    "average_rating_given": 9.8,
+    "max_rating": 10.0,
+    "high_quality_ratio": 1.0
+  },
+  "content_duration_preferences": {
+    "short_content": "User prefers content around 45 minutes duration for TV shows.",
+    "long_content": "User also consumes longer movies averaging over 2 hours, particularly in the Drama genre."
+  },
+  "viewing_habits": {
+    "average_vote_preference_movies": 8.0,
+    "average_vote_preference_shows": 7.9,
+    "total_analyzed_movies": 4,
+    "total_analyzed_shows": 3,
+    "popularity_preferences": {
+      "average_popularity_movies": 26.4,
+      "average_popularity_shows": 26.3,
+      "prefers_mainstream": {
+        "movies": 0.25,
+        "shows": 0.0
+      }
+    }
+  },
+  "confidence_score": 0.7
+}

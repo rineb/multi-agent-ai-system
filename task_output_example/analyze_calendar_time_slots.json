@@ -1,0 +1,22 @@
+{
+  "available_time_slots": [
+    {
+      "start_time": "2025-09-29T00:00:00+02:00",
+      "end_time": "2025-09-29T13:00:00+02:00",
+      "duration": "13 hours",
+      "content_fit": "Podcasts or shorter shows, some could choose to binge-watch multiple episodes."
+    },
+    {
+      "start_time": "2025-09-29T14:00:00+02:00",
+      "end_time": "2025-09-29T23:59:00+02:00",
+      "duration": "9 hours and 59 minutes",
+      "content_fit": "Movies or binge-watching TV series."
+    }
+  ],
+  "total_available_free_time": "22 hours and 59 minutes",
+  "analysis": {
+    "morning_slots": "Ideal for energizing content such as podcasts or light TV shows, although a long early morning period may not typically be used for movies.",
+    "afternoon_slots": "Post-busy period is great for taking breaks with movies or episodes, excellent for relaxation after an afternoon commitment.",
+    "evening_slots": "Evening is prime time for longer content such as movies, making the post-2 PM slot particularly suitable."
+  }
+}

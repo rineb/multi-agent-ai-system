@@ -1,0 +1,58 @@
+{
+  "feedback_collection_summary": {
+    "days_analyzed": 7,
+    "bot_messages_found": 20,
+    "messages_with_reactions": 2,
+    "total_reactions_collected": 3
+  },
+  "detailed_feedback": [
+    {
+      "message_id": "1419916105186676799",
+      "message_content": "**🎯 Today's Top Picks**\n\n- 🎬 [Into the Spider-Verse](https://www.themoviedb.org/movie/284052-into-the-spider-verse) — Animation, Action — 8.4/10  \n🕒 2025-09-24 20:00 (2.5h) — Selected for the evening, engaging viewers with familiar characters and stunning visuals.\n\n- 📺 [The Legend of Vox Machina](https://www.themoviedb.org/tv/117045-the-legend-of-vox-machina) — Animation, Comedy, Adventure — 9.0/10  \n🕒 2025-09-25 20:00 (3h) — Perfect for light-hearted viewing; ideal timing for a fun group watch during the evening.\n\n- 🎧 [The Mel Robbins Podcast: Try It For 1 Week](https://open.spotify.com/episode/2fZrTyWcqOmGJpFXAOlxbg) — Health, Technology — ~90m  \n🕒 2025-09-24 17:00 (1.5h) — Afternoon slot for short, motivational content; a great way to energize day-to-day activities.\n\n- 🎧 [Stuff You Should Know: Disappearance of Flight MH370](https://open.spotify.com/episode/6LLzVU6duFfzAH1U7u2But) — History, Education — ~60m  \n🕒 2025-09-25 22:00 (1h) — Engage in deep, intriguing topics; excellent late-night listening for curious minds.\n\n- 🎧 [Huberman Lab: Understanding & Conquering Depression](https://open.spotify.com/episode/3b8SNn7UIoRU8XlJduxOkU) — Technology, Lifestyle — ~60m  \n🕒 2025-09-25 18:00 (1h) — Suitable for early evening insights; ideal for reflection at the end of the day.\n\n- 🎧 [How we took on an oil giant — and won](https://open.spotify.com/episode/5aOiWjVu8Ell0EiXGLtVgh) — Education, Technology — ~60m  \n🕒 2025-09-24 15:00 (1h) — Midday content perfect for a break; informative and aligned with technology interests.\n\n📅 Set reminders for your choices and join discussions on Discord afterward for feedback and future recommendations!",
+      "timestamp": "2025-09-23T05:19:40.242000+00:00",
+      "reactions": {
+        "👍": 1,
+        "👎": 0,
+        "✅": 1,
+        "❌": 0,
+        "⭐": 0,
+        "🕐": 0
+      }
+    },
+    {
+      "message_id": "1419768609063833711",
+      "message_content": "🌟 **Here are some tailored recommendations for your viewing pleasure!**\n\n🎯 **Today’s Top Picks**\n\n- 🎬 [American History X](https://www.themoviedb.org/movie/73) — Drama — 8.334/10  \n🕒 **Sep 22, 12:00 PM (2h)** — A gripping drama aligns perfectly with your preferences and fits nicely into a midday slot!  \n\n- 📺 [Interstellar](https://www.themoviedb.org/movie/157336) — Adventure, Drama, Sci-Fi — 8.46/10  \n🕒 **Sep 22, 02:00 PM (2h 49m)** — A captivating mix of genres for an evening of thrilling exploration!  \n\n- 🎬 [F1](https://www.themoviedb.org/movie/911430) — Action, Drama — 7.824/10  \n🕒 **Sep 22, 05:00 PM (2h 36m)** — Perfect for post-dinner excitement with action-packed drama!  \n\n- 📺 [Wednesday](https://www.themoviedb.org/tv/119051) — Sci-Fi & Fantasy, Mystery, Comedy — 8.391/10  \n🕒 **Sep 23, 11:00 AM (45m)** — Kick off your day with a light-hearted series that mixes mystery and fun!  \n\n- 📺 [Law & Order](https://www.themoviedb.org/tv/549) — Crime, Drama — 7.4/10  \n🕒 **Sep 23, 12:00 PM (42m)** — Enjoy gripping crime drama during your lunch break!  \n\n- 🎬 [City Lights](https://www.themoviedb.org/movie/901) — Comedy, Drama, Romance — 8.265/10  \n🕒 **Sep 23, 03:00 PM (1h 27m)** — A classic comedy-drama to lift your spirits in the afternoon!  \n\n👉 **Next Steps:** Dive into these recommendations and share your thoughts on Discord for even more personalized suggestions! Enjoy!",
+      "timestamp": "2025-09-22T19:33:34.426000+00:00",
+      "reactions": {
+        "👍": 1,
+        "👎": 0,
+        "✅": 0,
+        "❌": 0,
+        "⭐": 0,
+        "🕐": 0
+      }
+    }
+  ],
+  "feedback_patterns": {
+    "overall_satisfaction": "high",
+    "satisfaction_score": 1.0,
+    "engagement_level": "low",
+    "consumption_rate": 0.33,
+    "content_preferences": {
+      "liked_content": 2,
+      "disliked_content": 0,
+      "perfect_matches": 0,
+      "actually_consumed": 1,
+      "not_interested": 0
+    },
+    "timing_feedback": {
+      "timing_issues": 0,
+      "timing_issue_rate": 0.0
+    },
+    "total_feedback_points": 3,
+    "messages_with_feedback": 2,
+    "recommendations": [
+      "Users are interested but not consuming content, check time slot accuracy and content accessibility"
+    ]
+  }
+}

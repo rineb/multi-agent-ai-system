@@ -1,0 +1,293 @@
+analyze_calendar_time_slots_task:
+  description: >
+    STEP 1: Use the "Google Calendar Busy Periods Finder" tool to fetch all busy periods for {calendar_id} between {start_date} and {end_date} in timezone {timezone}.
+    STEP 2: Analyze the returned busy periods to identify available free time slots between events.
+    STEP 3: Look for free slots between busy periods that are at least {min_free_time_minutes} minutes long.
+    STEP 4: For each free time slot, determine what type of content would fit:
+    - Short slots (15-45 minutes): Good for short videos or TV episodes
+    - Medium slots (45-90 minutes): Good for TV episodes or short movies
+    - Long slots (90+ minutes): Good for movies
+    
+    IMPORTANT: You MUST use the Google Calendar tool to fetch actual calendar data.
+  expected_output: >
+    A JSON object containing:
+    1) List of available time slots with start time, end time, and duration
+    2) For each time slot, specify what type of content fits (TV episodes, movies, etc.)
+    3) Total available free time found
+    4) Brief analysis of the best times for different content types
+  agent: calendar_time_slot_analyzer
+
+search_tmdb_content_task:
+  description: >
+    Discover popular movies and TV shows using TMDB API to build a content library for recommendations.
+    Use the "TMDB Content Discovery Tool" with these parameters:
+    - tmdb_content_type_max_result: Use the integer value {tmdb_content_type_max_result} from inputs
+    - min_rating: 6.0 (or higher for quality content)
+    - fetch_detailed_info: true (to get runtime information)
+    
+    For each piece of content found, provide:
+    - Title and brief description
+    - Genre information
+    - Rating and popularity scores
+    - Runtime/duration from TMDB details API
+    - Content type classification
+    - Additional metadata
+    - A canonical url field for each item:
+      * Movies: https://www.themoviedb.org/movie/<tmdb_id>
+      * TV Shows: https://www.themoviedb.org/tv/<tmdb_id>
+    
+    EXECUTION INSTRUCTIONS:
+    - You MUST use the TMDB search tool.
+    - The tool will return a single JSON object with two arrays: movies and tv_shows.
+    - Use the url values returned by the tool EXACTLY as provided; do not modify or reconstruct any urls.
+    - Do not add narrative, explanations, or markdown; return only raw JSON.
+
+    Focus on discovering a diverse mix of well-rated, popular content across different genres.
+    The precise runtime data is crucial for accurate time slot matching in recommendations.
+  expected_output: >
+    Return ONLY the tool's raw JSON (no prose, no markdown) with this structure:
+    {
+      "movies": [ ... items returned by the tool ... ],
+      "tv_shows": [ ... items returned by the tool ... ]
+    }
+    Each item will include tmdb_id, title, content_type (movie|tv), url, genres, overview, vote_average, and a runtime field
+    (runtime_minutes for movies, episode_runtime_minutes for tv).
+  agent: tmdb_content_searcher
+
+analyze_user_tmdb_preferences_task:
+  description: >
+    Analyze user preferences for movies and TV shows from TMDB platform to understand 
+    their viewing patterns and content preferences.
+    
+    Use the TMDB User Preference tool to analyze:
+    - User's rated movies and TV shows
+    - Genre preferences and patterns
+    - Rating behavior and quality thresholds
+    - Viewing history and consumption habits
+    - Content duration preferences
+    
+    Focus on creating a comprehensive preference profile for user_id: "{user_id}" that will 
+    inform personalized video content recommendations.
+  expected_output: >
+    A comprehensive JSON video preference analysis containing:
+    1) User preference summary with key insights
+    2) Genre preferences ranked by strength (Action: 0.9, Drama: 0.7, etc.)
+    3) Rating patterns and minimum quality thresholds
+    4) Content duration preferences (short vs long content)
+    5) Viewing habits and consumption patterns
+    6) Confidence score for the analysis
+  agent: tmdb_user_preference_analyzer
+
+analyze_user_spotify_preferences_task:
+  description: >
+    Analyze user preferences for podcasts from the Spotify platform and discover specific episode candidates
+    for personalized recommendations using an optimized single-pass approach.
+    
+    Use the Spotify User Preference tool to analyze:
+    - User's saved podcast shows and listening patterns
+    - Podcast genre preferences
+    - Episode duration preferences (derived from discovered episodes)
+    - Listening habits and consumption patterns
+    - Time-based preferences for podcast content
+    - Specific episode candidates from saved shows ready for immediate recommendation
+    
+    The tool efficiently discovers episode candidates using optimized API usage:
+    - Single API call per show to fetch episodes
+    - Uses fetched episode data for both preference analysis and recommendations
+    - Randomly selects {max_episode_candidates} episode candidates for variety and simplicity
+    - Provides both preference insights AND specific episode recommendations
+    
+    Parameters:
+    - episodes_per_show: Number of episodes to fetch per saved show
+    - max_episode_candidates: Maximum total episode candidates to return
+    
+    Focus on creating a comprehensive podcast preference profile with actionable 
+    episode recommendations that match user interests and available time slots.
+  expected_output: >
+    A comprehensive JSON podcast preference analysis containing:
+    1) User podcast preference summary with key insights
+    2) Podcast preferences: genres, languages, publishers, content types
+    3) Episode duration preferences and listening patterns
+    4) Explicit content tolerance and other behavioral patterns
+    5) Episode candidates for recommendations with metadata and topic inference
+    6) Confidence score and data quality assessment
+  agent: spotify_podcast_preference_analyzer
+
+collect_discord_feedback_task:
+  description: >
+    Collect and analyze user feedback from Discord channel reactions to understand user 
+    satisfaction and preferences with previous content recommendations.
+    
+    Use the Discord Feedback Collection Tool to:
+    1) Retrieve recent messages sent by the bot in the Discord channel
+    2) Analyze emoji reactions (👍, 👎, ✅, ❌, ⭐, 🕐) on those messages
+    3) Calculate satisfaction scores and engagement metrics
+    4) Identify patterns in user feedback over time
+    5) Generate insights for improving future recommendations
+    
+    Focus on extracting actionable feedback that can inform content recommendation 
+    adjustments, including:
+    - Content preference patterns (liked vs disliked genres/types)
+    - Time slot accuracy (timing issues indicated by 🕐 reactions)
+    - Consumption rates (✅ reactions showing actual content consumption)
+    - Overall satisfaction trends (positive vs negative reaction ratios)
+    
+    IMPORTANT: This task requires Discord bot permissions to read message history 
+    and reactions in the target channel.
+  expected_output: >
+    A JSON object containing Discord feedback analysis with this structure:
+    {
+      "feedback_collection_summary": {
+        "days_analyzed": number,
+        "bot_messages_found": number,
+        "messages_with_reactions": number,
+        "total_reactions_collected": number
+      },
+      "detailed_feedback": [
+        {
+          "message_id": string,
+          "message_content": string,
+          "timestamp": string,
+          "reactions": {
+            "👍": number,
+            "👎": number,
+            "✅": number,
+            "❌": number,
+            "⭐": number,
+            "🕐": number
+          }
+        }
+      ],
+      "feedback_patterns": {
+        "overall_satisfaction": string,
+        "satisfaction_score": number,
+        "engagement_level": string,
+        "consumption_rate": number,
+        "content_preferences": {
+          "liked_content": number,
+          "disliked_content": number,
+          "perfect_matches": number,
+          "actually_consumed": number,
+          "not_interested": number
+        },
+        "timing_feedback": {
+          "timing_issues": number,
+          "timing_issue_rate": number
+        },
+        "total_feedback_points": number,
+        "messages_with_feedback": number,
+        "recommendations": [string]
+      }
+    }
+  agent: discord_feedback_collector
+
+synthesize_content_recommendations_task:
+  description: >
+    Create final personalized content recommendations by synthesizing all gathered data:
+    calendar time slots, discovered content, user preferences, and Discord feedback patterns.
+    
+    Use the outputs from all previous tasks:
+    1) Available time slots with durations and timing
+    2) Content library with movies, TV shows, and podcasts
+    3) User video preferences (genres, ratings, viewing patterns)
+    4) User audio preferences (podcast categories, listening patterns)
+    5) Discord feedback analysis (satisfaction patterns, timing issues, consumption rates)
+    
+    Create intelligent, personalized matches by:
+    - Matching content duration to available time slots
+    - Aligning content with user preferences (genres, ratings, etc.)
+    - LEARNING FROM FEEDBACK: Adjusting recommendations based on Discord feedback patterns:
+      * If satisfaction scores are low, shift genre preferences or content types
+      * If timing feedback (🕐) is high, recalibrate time slot assignments
+      * If consumption rates (✅) are low despite interest (👍), adjust content accessibility or timing
+      * If specific content types get consistently negative feedback, reduce their weight
+      * If certain genres get consistently positive feedback, increase their representation
+    - Considering time-of-day appropriateness and user context
+    - Balancing familiar preferences with discovery opportunities based on feedback patterns
+    - Ensuring variety across different content types and genres
+    - Providing clear reasoning for each recommendation, including feedback-based adjustments
+    
+    FEEDBACK INTEGRATION STRATEGY:
+    - Use feedback satisfaction scores to weight genre preferences
+    - Apply timing feedback to improve time slot matching accuracy
+    - Leverage consumption data to balance interest vs. actual viewing likelihood
+    - Incorporate feedback trends to adjust mainstream vs. niche content ratios
+    
+    Generate {top_final_recommendations} recommendations with specific time slot assignments.
+    URL REQUIREMENTS:
+    - For every recommendation, CARRY THROUGH the source `url` exactly as provided by TMDB/Spotify.
+    - Do NOT modify or reconstruct URLs. If a source item lacks a url, leave the recommendation's url empty.
+  expected_output: >
+    A comprehensive personalized recommendation JSON object containing:
+    1) Executive summary of the personalized recommendation process including feedback integration
+    2) Feedback-based adjustments made to recommendations (if applicable)
+    3) List of specific content recommendations with:
+       - Content title, genre, rating, and description
+       - Assigned time slot (specific date/time and duration)
+       - url field (exactly as received from source; empty if none)
+       - Preference alignment score and reasoning
+       - Why this content fits this time slot, user preferences, and learned feedback patterns
+       - Alternative time slots if applicable
+    4) Summary of unused time slots and explanation
+    5) Preference-based recommendation strategy analysis including feedback integration
+    6) Balance of familiar vs discovery content adjusted based on feedback patterns
+    7) Learning summary: How feedback has influenced these recommendations
+    8) Clear next steps for the user to act on these recommendations
+  agent: content_recommendation_synthesizer
+
+format_recommendations_task:
+  description: >
+    Take the complete recommendations from the synthesis task and produce a Discord-ready message.
+
+    STEPS:
+    1) Parse the recommendation synthesis output to extract the recommendation entries.
+    2) Format the final message to match the provided example EXACTLY in tone and structure:
+       {format_example}
+    3) Include a short header/summary and ensure the entire message stays within 2000 characters.
+    4) EMOJI ASSIGNMENT - Follow these rules EXACTLY:
+       - For each item, check its `content_type` field OR examine the URL
+       - If content_type="movie" OR URL contains "themoviedb.org/movie/" → Use 🎬 emoji
+       - If content_type="tv" OR URL contains "themoviedb.org/tv/" → Use 📺 emoji  
+       - If content is from Spotify/audio platforms → Use 🎧 emoji
+       - NEVER use wrong emoji - movies must ALWAYS use 🎬, TV shows must ALWAYS use 📺
+    5) URL PRESERVATION - CRITICAL:
+       - Use the exact `url` field value as provided - do NOT modify, change, or reconstruct it
+       - If `url` is missing/null/empty, show: "Title Name (No URL)" 
+       - NEVER guess, build, or create URLs from titles, IDs, or other fields
+       - Never change ids, content types, or titles. Do not alter item order or selection.
+  expected_output: >
+    A single string containing the final Discord-ready message (under 2000 characters) with:
+    1) A short summary line
+    2) A bulleted list of up to {top_final_recommendations} items with:
+       - Emoji, title as a clickable link, content type, rating/score if available
+       - Assigned time slot (date/time and duration)
+       - One-line reason tying user preferences and timing
+    3) Optional footer line with brief next steps
+  agent: discord_message_formatter
+
+discord_delivery_task:
+  description: >
+    Send the formatted content recommendations to Discord.
+    Take the formatted message result from the formatting task context and send it to Discord using the Discord Delivery Tool.
+    
+    STEPS:
+    1. Take the formatted message exactly as provided by the formatting task
+    2. Call the Discord Delivery Tool with parameter:
+       - content: Pass the full formatted message exactly as received
+    3. Return the tool's delivery status
+    
+    CRITICAL REQUIREMENTS:
+    - You MUST attempt to use the "Discord Delivery Tool" exactly once
+    - Your success is measured by whether the message actually gets delivered to Discord
+    - If delivery succeeds: return the tool's success message
+    - If delivery fails: return the tool's error message with failure details
+    - If you cannot use the tool: return exactly "TOOL_NOT_CALLED"
+
+    MESSAGE FORMATTING GUIDELINES:
+    - Include a clear summary of recommendations
+    - List each recommendation with time slot and brief reasoning
+    - Use Discord-friendly formatting and emojis for readability
+    - Keep the message concise but informative
+  expected_output: >
+    The exact return message from the Discord Delivery Tool indicating delivery success or failure.
+    Examples: "Message sent successfully to Discord channel" or "Failed to send message: [error details]" or "TOOL_NOT_CALLED"
